@@ -1,6 +1,10 @@
+import NavBar from "./components/NavBar";
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-blue-600">My Portfolio</h1>
+    <div className="min-h-screen bg-gray-50">
+      <NavBar />
+    </div>
   );
 }
 
