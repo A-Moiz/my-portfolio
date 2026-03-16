@@ -1,6 +1,7 @@
 import GitHub from "../assets/github.png";
 import Linkedin from "../assets/linkedin.png";
 import Download from "../assets/download.png";
+import Button from "./Button";
 
 function NavBar() {
   const githubProfileLink = "https://github.com/A-Moiz";
@@ -63,17 +64,7 @@ function NavBar() {
           </a>
         </div>
 
-        <a
-          href=""
-          className="flex items-center gap-2 px-5 py-2.5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold rounded-xl hover:scale-105 active:scale-95 transition-all shadow-lg shadow-blue-500/10"
-        >
-          <img
-            className="w-4 h-4 dark:invert-0 invert"
-            src={Download}
-            alt="CV"
-          />
-          <span>RESUME</span>
-        </a>
+        <Button href="" label="CV" icon={Download} variant="secondary" />
       </div>
     </nav>
   );
