@@ -21,6 +21,14 @@ function NavBar() {
       <ul className="hidden md:flex gap-10 text-sm font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
         <li className="hover:scale-120">
           <a
+            href="#hero"
+            className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+          >
+            About me
+          </a>
+        </li>
+        <li className="hover:scale-120">
+          <a
             href="#projects"
             className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
           >
