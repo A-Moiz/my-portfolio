@@ -19,9 +19,8 @@ function Hero() {
         </h1>
 
         <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-          iOS-focused software developer building scalable applications with
-          Swift and SwiftUI, passionate about clean architecture and creating
-          intuitive user experiences.
+          Software developer building scalable applications across iOS and Web,
+          with a focus on clean architecture and intuitive user experiences.
         </p>
 
         <div className="flex flex-wrap gap-5 pt-8">

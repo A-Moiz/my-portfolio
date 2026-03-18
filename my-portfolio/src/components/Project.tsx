@@ -70,13 +70,6 @@ function Project() {
             image={Vocabio}
             href={voabioLink}
           />
-
-          {/* Example of project without image to test default placeholder */}
-          <ProjectCard
-            title="Upcoming App"
-            description="Exploring new SwiftUI architectures for a habit tracking application."
-            href="#"
-          />
         </div>
       </div>
     </section>
