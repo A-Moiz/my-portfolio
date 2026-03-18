@@ -7,6 +7,13 @@ function NavBar() {
   const githubProfileLink = "https://github.com/A-Moiz";
   const linkedinProfileLink =
     "https://www.linkedin.com/in/abdul-moiz-135580307/";
+  const navLinks = [
+    { label: "About me", href: "#hero" },
+    { label: "Education", href: "#education" },
+    { label: "Projects", href: "#projects" },
+    { label: "Skills", href: "#skills" },
+    { label: "Contact", href: "#contact" },
+  ];
 
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between px-12 py-4 bg-white/80 dark:bg-blue-950/80 backdrop-blur-md border-b border-slate-200 dark:border-blue-900 transition-all duration-300">
@@ -20,46 +27,16 @@ function NavBar() {
 
       {/* Nav Links */}
       <ul className="hidden md:flex gap-10 text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-200">
-        <li className="hover:scale-110 transition-transform">
-          <a
-            href="#hero"
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            About me
-          </a>
-        </li>
-        <li className="hover:scale-110 transition-transform">
-          <a
-            href="#education"
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            Education
-          </a>
-        </li>
-        <li className="hover:scale-110 transition-transform">
-          <a
-            href="#projects"
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            Projects
-          </a>
-        </li>
-        <li className="hover:scale-110 transition-transform">
-          <a
-            href="#skills"
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            Skills
-          </a>
-        </li>
-        <li className="hover:scale-110 transition-transform">
-          <a
-            href="#contact"
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            Contact
-          </a>
-        </li>
+        {navLinks.map((link) => (
+          <li key={link.href} className="hover:scale-110 transition-transform">
+            <a
+              href={link.href}
+              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
       </ul>
 
       {/* Actions & Socials */}
