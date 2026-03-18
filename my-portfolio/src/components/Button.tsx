@@ -1,7 +1,7 @@
 interface Props {
   href: string;
   label: string;
-  icon?: string;
+  icon?: React.ReactNode;
   variant?: "primary" | "secondary";
   download?: string;
 }
@@ -21,9 +21,7 @@ function Button({ href, label, icon, variant = "primary", download }: Props) {
       className={`${baseStyles} ${variantStyles}`}
       download={download}
     >
-      {icon && (
-        <img className="w-4 h-4 dark:invert-0 invert" src={icon} alt="" />
-      )}
+      {icon && <span className="text-lg">{icon}</span>}
       <span>{label}</span>
     </a>
   );

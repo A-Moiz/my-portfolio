@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Download from "../assets/download.png";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
 
 function NavBar() {
@@ -76,7 +76,7 @@ function NavBar() {
         <Button
           href="/abdul-moiz-sd.pdf"
           label="CV"
-          icon={Download}
+          icon={<FontAwesomeIcon icon={faFileDownload} />}
           variant="secondary"
           download="abdul-moiz-sd.pdf"
         />
