@@ -30,6 +30,14 @@ function NavBar() {
         </li>
         <li className="hover:scale-110 transition-transform">
           <a
+            href="#education"
+            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            Education
+          </a>
+        </li>
+        <li className="hover:scale-110 transition-transform">
+          <a
             href="#projects"
             className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >

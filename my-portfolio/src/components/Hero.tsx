@@ -37,10 +37,10 @@ function Hero() {
             download="reference-letter.pdf"
           />
           <Button
-            href="/award-confirmation"
+            href="/award-confirmation.pdf"
             label="Award Confirmation"
             variant="secondary"
-            download="award-confirmation"
+            download="award-confirmation.pdf"
           />
         </div>
       </div>
