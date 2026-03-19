@@ -26,6 +26,7 @@ function Footer() {
           <a
             href={githubProfileLink}
             target="_blank"
+            aria-label="Visit my GitHub profile"
             className="text-slate-600 dark:text-slate-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors text-xl"
           >
             <FontAwesomeIcon icon={faGithub} />
@@ -33,6 +34,7 @@ function Footer() {
           <a
             href={linkedinProfileLink}
             target="_blank"
+            aria-label="Visit my LinkedIn profile"
             className="text-[#0077b5] dark:text-[#0a66c2] hover:opacity-80 transition-opacity text-xl"
           >
             <FontAwesomeIcon icon={faLinkedin} />
