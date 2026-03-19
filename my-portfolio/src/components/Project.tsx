@@ -4,24 +4,44 @@ import ListIt from "../assets/list-it.jpeg";
 import OpbrCompanion from "../assets/opbr-companion.png";
 import BmiBuddy from "../assets/bmi-buddy.png";
 import Vocabio from "../assets/vocabio.png";
+import WheelSpin from "../assets/wheel-spin.png";
+import AnimeQuote from "../assets/anime-quote.jpg";
+import StudentResults from "../assets/student-results.jpeg";
+import SkinConsultation from "../assets/skin-consultation.jpeg";
 
 function Project() {
   const gitHubLink = "https://github.com/A-Moiz";
   const projectsData = [
     {
-      title: "List It",
+      title: "List It (iOS)",
       description:
-        "A minimalist To-Do list and Note-taking app designed for speed and simplicity on iOS.",
+        "A minimalist To-Do list and Note-taking app designed for speed and simplicity.",
       image: ListIt,
       href: "https://apps.apple.com/gb/app/list-it-simple-to-do-list/id6746731233",
     },
 
     {
-      title: "OPBR Companion",
+      title: "List It (Web)",
+      description:
+        "A minimalist To-Do list and Note-taking app designed for speed and simplicity.",
+      image: ListIt,
+      href: "https://list-it-dom.netlify.app/landingpage",
+    },
+
+    {
+      title: "OPBR Companion (iOS)",
       description:
         "A comprehensive guide and companion utility for One Piece Bounty Rush players to optimise their gameplay.",
       image: OpbrCompanion,
       href: "https://apps.apple.com/gb/app/opbr-companion/id6737994116",
+    },
+
+    {
+      title: "OPBR Companion (Web)",
+      description:
+        "A comprehensive guide and companion utility for One Piece Bounty Rush players to optimise their gameplay.",
+      image: OpbrCompanion,
+      href: "https://opbr-companion.netlify.app",
     },
 
     {
@@ -38,6 +58,38 @@ function Project() {
         "A community driven slang dictionary where users contribute definitions and vote on the best entries in a live feed.",
       image: Vocabio,
       href: "https://apps.apple.com/gb/app/vocabio/id6757109154",
+    },
+
+    {
+      title: "Random Generator",
+      description:
+        "A simple web application that allows users to add items, display them in a sidebar, and generate a random item from the list.",
+      image: WheelSpin,
+      href: "https://github.com/A-Moiz/spin-d-wheel",
+    },
+
+    {
+      title: "Anime Quote Generator",
+      description:
+        "A simple and interactive web application that displays random anime quotes and allows users to browse and search through all available quotes.",
+      image: AnimeQuote,
+      href: "https://github.com/A-Moiz/anime-quote-generator",
+    },
+
+    {
+      title: "University coursework - Student Progression Outcome System",
+      description:
+        "Python program designed to determine student progression outcomes based on the number of credits achieved in Pass, Defer, and Fail categories.",
+      image: StudentResults,
+      href: "https://github.com/A-Moiz/student-results",
+    },
+
+    {
+      title: "University coursework - Skin Consultation Manager",
+      description:
+        "Java desktop application designed to manage doctors and patient consultations for a skin consultation clinic.",
+      image: SkinConsultation,
+      href: "https://github.com/A-Moiz/Skin-Consultation-Manager",
     },
   ];
 
