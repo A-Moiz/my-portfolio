@@ -1,0 +1,19 @@
+[build]
+  # Tell Netlify to enter the subfolder first
+  base = "my-portfolio"
+  
+  # Run the build command inside that folder
+  command = "npm run build"
+  
+  # Tell Netlify exactly where the finished files are
+  publish = "dist"
+
+[build.environment]
+  # This fixes the npm error we saw earlier
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[[redirects]]
+  # This prevents 404 errors if you refresh the page later
+  from = "/*"
+  to = "/index.html"
+  status = 200
