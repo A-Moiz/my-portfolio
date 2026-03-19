@@ -28,11 +28,13 @@ function Education() {
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
+
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
-            Academic <span className="text-blue-500">Journey</span>
+            Academic{" "}
+            <span className="text-blue-700 dark:text-blue-400">Journey</span>
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 mt-4 max-w-xl">
+          <p className="text-slate-700 dark:text-slate-200 mt-4 max-w-xl text-lg">
             My educational background and current academic pursuits in the field
             of technology.
           </p>
