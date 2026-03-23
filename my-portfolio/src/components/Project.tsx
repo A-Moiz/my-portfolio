@@ -1,7 +1,9 @@
 import Button from "./Button";
 import ProjectCard from "./ProjectCard";
 import ListIt from "../assets/projects/ios/list-it-2.png";
+import ListItWeb from "../assets/projects/other/list-it-web.png";
 import OpbrCompanion from "../assets/projects/ios/opbr-companion-2.png";
+import OpbrCompanionWeb from "../assets/projects/other/opbr-companion-web.png";
 import BmiBuddy from "../assets/projects/ios/bmi-buddy-2.png";
 import Vocabio from "../assets/projects/ios/vocabio-2.png";
 import WheelSpin from "../assets/projects/other/wheel-spin.png";
@@ -24,7 +26,7 @@ function Project() {
       title: "List It (Web)",
       description:
         "A minimalist To-Do list and Note-taking app designed for speed and simplicity.",
-      image: ListIt,
+      image: ListItWeb,
       href: "https://list-it-dom.netlify.app/landingpage",
     },
 
@@ -40,7 +42,7 @@ function Project() {
       title: "OPBR Companion (Web)",
       description:
         "A comprehensive guide and companion utility for One Piece Bounty Rush players to optimise their gameplay.",
-      image: OpbrCompanion,
+      image: OpbrCompanionWeb,
       href: "https://opbr-companion.netlify.app",
     },
 
