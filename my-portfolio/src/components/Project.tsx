@@ -1,13 +1,13 @@
 import Button from "./Button";
 import ProjectCard from "./ProjectCard";
-import ListIt from "../assets/list-it.jpeg";
-import OpbrCompanion from "../assets/opbr-companion.png";
-import BmiBuddy from "../assets/bmi-buddy.png";
-import Vocabio from "../assets/vocabio.png";
-import WheelSpin from "../assets/wheel-spin.png";
-import AnimeQuote from "../assets/anime-quote.jpg";
-import StudentResults from "../assets/student-results.jpeg";
-import SkinConsultation from "../assets/skin-consultation.jpeg";
+import ListIt from "../assets/projects/ios/list-it-2.png";
+import OpbrCompanion from "../assets/projects/ios/opbr-companion-2.png";
+import BmiBuddy from "../assets/projects/ios/bmi-buddy-2.png";
+import Vocabio from "../assets/projects/ios/vocabio-2.png";
+import WheelSpin from "../assets/projects/other/wheel-spin.png";
+import AnimeQuote from "../assets/projects/other/anime-quote.jpg";
+import StudentResults from "../assets/projects/other/student-results.jpeg";
+import SkinConsultation from "../assets/projects/other/skin-consultation.jpeg";
 
 function Project() {
   const gitHubLink = "https://github.com/A-Moiz";

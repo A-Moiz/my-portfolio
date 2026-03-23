@@ -1,4 +1,4 @@
-import DefaultProject from "../assets/project-image.svg";
+import DefaultProject from "../assets/projects/other/project-image.svg";
 
 interface Props {
   title: string;
