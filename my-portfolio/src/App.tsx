@@ -1,10 +1,10 @@
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Project from "./components/Project";
-import Skill from "./components/Skill";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Education from "./components/Education";
+import NavBar from "./sections/NavBar";
+import Hero from "./sections/Hero";
+import Project from "./sections/Project";
+import Skill from "./sections/Skill";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+import Education from "./sections/Education";
 
 function App() {
   return (

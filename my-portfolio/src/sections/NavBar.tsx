@@ -6,7 +6,7 @@ import {
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import Button from "./Button";
+import Button from "../components/Button";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);

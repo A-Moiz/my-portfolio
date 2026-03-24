@@ -1,5 +1,5 @@
-import Button from "./Button";
-import ProjectCard from "./ProjectCard";
+import Button from "../components/Button";
+import ProjectCard from "../components/ProjectCard";
 import ListIt from "../assets/projects/ios/list-it-2.png";
 import ListItWeb from "../assets/projects/other/list-it-web.png";
 import OpbrCompanion from "../assets/projects/ios/opbr-companion-2.png";

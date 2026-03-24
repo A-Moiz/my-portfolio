@@ -1,6 +1,6 @@
 import CheckMark from "../assets/checkmark.png";
-import SkillCard from "./SkillCard";
-import SkillEntry from "./SkillEntry";
+import SkillCard from "../components/SkillCard";
+import SkillEntry from "../components/SkillEntry";
 
 const technicalSkills = [
   "Swift",
