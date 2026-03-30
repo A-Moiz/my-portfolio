@@ -1,15 +1,31 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faFileDownload,
   faBars,
   faXmark,
+  faVolumeHigh,
+  faVolumeMute,
 } from "@fortawesome/free-solid-svg-icons";
 import Button from "../components/Button";
+import audio from "../assets/overtaken.mp3";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const toggleMusic = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
 
   const githubProfileLink = "https://github.com/A-Moiz";
   const linkedinProfileLink =
@@ -25,6 +41,7 @@ function NavBar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white/90 dark:bg-blue-950/90 backdrop-blur-md border-b border-slate-200 dark:border-blue-900 transition-all duration-300">
+      <audio ref={audioRef} src={audio} loop />
       <div className="flex items-center justify-between px-6 md:px-12 py-4">
         {/* Name */}
         <h1 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white cursor-default">
@@ -52,6 +69,17 @@ function NavBar() {
         <div className="flex items-center gap-4">
           <div className="hidden sm:flex items-center gap-6">
             <div className="flex gap-6 border-r border-slate-200 dark:border-blue-800 pr-6">
+              <button
+                onClick={toggleMusic}
+                className="text-slate-900 dark:text-white hover:scale-110 transition-transform"
+                aria-label={isPlaying ? "Pause music" : "Play music"}
+              >
+                <FontAwesomeIcon
+                  icon={isPlaying ? faVolumeHigh : faVolumeMute}
+                  className="text-xl w-6"
+                />
+              </button>
+
               <a
                 href={githubProfileLink}
                 target="_blank"
@@ -112,6 +140,12 @@ function NavBar() {
           ))}
           <hr className="border-slate-200 dark:border-blue-900 my-2" />
           <div className="flex items-center justify-between pt-2">
+            <button
+              onClick={toggleMusic}
+              className="text-2xl text-slate-900 dark:text-white"
+            >
+              <FontAwesomeIcon icon={isPlaying ? faVolumeHigh : faVolumeMute} />
+            </button>
             <div className="flex gap-6">
               <a
                 href={githubProfileLink}
