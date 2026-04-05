@@ -15,12 +15,13 @@ function Hero() {
 
       <div className="max-w-2xl dark:text-slate-100">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-          Software <span className="text-blue-500">Developer</span>
+          Web | iOS <span className="text-blue-500">Developer</span>
         </h1>
 
         <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-          Software developer building scalable applications across iOS and Web,
-          with a focus on clean architecture and intuitive user experiences.
+          Full-stack Web & iOS developer building scalable, cross-platform
+          applications with React/TypeScript, and Swift/SwiftUI, delivering
+          intuitive, user-centred experiences and maintainable architecture.
         </p>
 
         <div className="flex flex-wrap gap-5 pt-8">

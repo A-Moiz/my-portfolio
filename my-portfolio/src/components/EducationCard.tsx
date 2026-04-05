@@ -4,6 +4,7 @@ interface Props {
   duration: string;
   description: string;
   isCurrent?: boolean;
+  tags?: string[];
 }
 
 function EducationCard({
@@ -12,6 +13,7 @@ function EducationCard({
   duration,
   description,
   isCurrent,
+  tags = [],
 }: Props) {
   return (
     <div className="flex flex-col p-8 bg-slate-50 dark:bg-blue-900/20 border border-slate-200 dark:border-blue-800 rounded-3xl transition-all hover:shadow-md">
@@ -38,6 +40,19 @@ function EducationCard({
       <p className="text-slate-700 dark:text-slate-100 leading-relaxed">
         {description}
       </p>
+
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-5">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="text-[11px] font-bold px-3 py-1 rounded-lg bg-slate-200/50 dark:bg-blue-800/40 text-slate-700 dark:text-blue-200 border border-slate-300/50 dark:border-blue-700/50 uppercase tracking-wider"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

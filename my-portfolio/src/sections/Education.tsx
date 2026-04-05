@@ -8,6 +8,15 @@ const educationData = [
     description:
       "Web development bootcamp where I am developing practical skills in modern web technologies, collaborating with other developers, and building real-world projects using HTML, CSS and JavaScript",
     isCurrent: true,
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Jest",
+      "Debugging",
+      "Collaboration",
+      "Agile methodology",
+    ],
   },
   {
     school: "University of Westminster",
@@ -17,6 +26,17 @@ const educationData = [
     description:
       "Studied various aspects of modern computer science and specialised computer science topics, laying the foundation for my success in a rapidly changing environment",
     isCurrent: false,
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Swift",
+      "Kotlin",
+      "Firebase",
+      "Teamwork",
+      "Agile methodology",
+    ],
   },
 ];
 
