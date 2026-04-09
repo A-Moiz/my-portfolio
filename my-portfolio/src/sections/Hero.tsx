@@ -26,10 +26,9 @@ function Hero() {
 
         <div className="flex flex-wrap gap-5 pt-8">
           <Button
-            href="/abdul-moiz-sd.pdf"
+            href="https://canva.link/805ndmah46ti3ff"
             label="CV"
             variant="primary"
-            download="abdul-moiz-sd.pdf"
           />
           <Button
             href="/reference-letter.pdf"
