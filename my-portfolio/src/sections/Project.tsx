@@ -10,16 +10,26 @@ import WheelSpin from "../assets/projects/other/wheel-spin.png";
 import AnimeQuote from "../assets/projects/other/anime-quote.jpg";
 import StudentResults from "../assets/projects/other/student-results.jpeg";
 import SkinConsultation from "../assets/projects/other/skin-consultation.jpeg";
+import TVShow from "../assets/projects/other/tv-show.png";
 
 function Project() {
   const gitHubLink = "https://github.com/A-Moiz";
   const projectsData = [
+    {
+      title: "CodeYourFuture coursework - TV Show & Episode guide",
+      description:
+        "A dynamic, responsive web application built to take structured data from an external API and display it to users in a clear, interactive format.",
+      image: TVShow,
+      href: "https://cyf-a-moiz-tv.netlify.app",
+      tags: ["HTML/CSS", "JavaScript", "TVMaze API"],
+    },
     {
       title: "List It (iOS)",
       description:
         "A minimalist To-Do list and Note-taking app designed for speed and simplicity.",
       image: ListIt,
       href: "https://apps.apple.com/gb/app/list-it-simple-to-do-list/id6746731233",
+      tags: ["iOS", "Swift", "SwiftUI", "Supabase", "Productivity"],
     },
 
     {
@@ -28,6 +38,7 @@ function Project() {
         "A minimalist To-Do list and Note-taking app designed for speed and simplicity.",
       image: ListItWeb,
       href: "https://list-it-dom.netlify.app/landingpage",
+      tags: ["Web", "React", "Tailwind css", "Productivity"],
     },
 
     {
@@ -36,6 +47,7 @@ function Project() {
         "A comprehensive guide and companion utility for One Piece Bounty Rush players to optimise their gameplay.",
       image: OpbrCompanion,
       href: "https://apps.apple.com/gb/app/opbr-companion/id6737994116",
+      tags: ["iOS", "Swift", "SwiftUI", "Game guide"],
     },
 
     {
@@ -44,6 +56,7 @@ function Project() {
         "A comprehensive guide and companion utility for One Piece Bounty Rush players to optimise their gameplay.",
       image: OpbrCompanionWeb,
       href: "https://opbr-companion.netlify.app",
+      tags: ["Web", "TypeScript", "Game guide"],
     },
 
     {
@@ -52,6 +65,7 @@ function Project() {
         "A streamlined health utility providing a quick and easy way for users to calculate and track their BMI.",
       image: BmiBuddy,
       href: "https://apps.apple.com/gb/app/bmi-buddy/id6683310423",
+      tags: ["iOS", "Swift", "SwiftUI", "Health & Fitness", "Firebase"],
     },
 
     {
@@ -60,6 +74,7 @@ function Project() {
         "A community driven slang dictionary where users contribute definitions and vote on the best entries in a live feed.",
       image: Vocabio,
       href: "https://apps.apple.com/gb/app/vocabio/id6757109154",
+      tags: ["iOS", "Swift", "SwiftUI", "Firebase", "Social"],
     },
 
     {
@@ -68,6 +83,7 @@ function Project() {
         "A simple web application that allows users to add items, display them in a sidebar, and generate a random item from the list.",
       image: WheelSpin,
       href: "https://github.com/A-Moiz/spin-d-wheel",
+      tags: ["Web", "JavaScript", "HTML/CSS", "DOM Manipulation"],
     },
 
     {
@@ -76,6 +92,7 @@ function Project() {
         "A simple and interactive web application that displays random anime quotes and allows users to browse and search through all available quotes.",
       image: AnimeQuote,
       href: "https://github.com/A-Moiz/anime-quote-generator",
+      tags: ["Web", "HTML/CSS", "JavaScript", "Firebase"],
     },
 
     {
@@ -84,6 +101,7 @@ function Project() {
         "Python program designed to determine student progression outcomes based on the number of credits achieved in Pass, Defer, and Fail categories.",
       image: StudentResults,
       href: "https://github.com/A-Moiz/student-results",
+      tags: ["Python", "File I/O", "Data Visualization", "Exception Handling"],
     },
 
     {
@@ -92,6 +110,7 @@ function Project() {
         "Java desktop application designed to manage doctors and patient consultations for a skin consultation clinic.",
       image: SkinConsultation,
       href: "https://github.com/A-Moiz/Skin-Consultation-Manager",
+      tags: ["Java", "OOP", "Swing GUI", "University"],
     },
   ];
 
