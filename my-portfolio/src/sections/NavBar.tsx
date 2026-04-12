@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
-  faFileDownload,
+  faFolderOpen,
   faBars,
   faXmark,
   faVolumeHigh,
@@ -100,11 +100,10 @@ function NavBar() {
               </a>
             </div>
             <Button
-              href="/abdul-moiz-sd.pdf"
-              label="CV"
-              icon={<FontAwesomeIcon icon={faFileDownload} />}
+              href="https://drive.google.com/drive/folders/13lQdURn4Z63anjTBkN1ts2Ii-Wr2ikPm?usp=share_link"
+              label="Documents"
+              icon={<FontAwesomeIcon icon={faFolderOpen} />}
               variant="secondary"
-              download="abdul-moiz-sd.pdf"
             />
           </div>
 
@@ -163,11 +162,10 @@ function NavBar() {
               </a>
             </div>
             <Button
-              href="/abdul-moiz-sd.pdf"
-              label="CV"
-              icon={<FontAwesomeIcon icon={faFileDownload} />}
+              href="https://drive.google.com/drive/folders/13lQdURn4Z63anjTBkN1ts2Ii-Wr2ikPm?usp=share_link"
+              label="Documents"
+              icon={<FontAwesomeIcon icon={faFolderOpen} />}
               variant="secondary"
-              download="abdul-moiz-sd.pdf"
             />
           </div>
         </ul>
