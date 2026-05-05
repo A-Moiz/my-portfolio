@@ -17,6 +17,7 @@ const educationData = [
       "Collaboration",
       "Agile methodology",
     ],
+    url: "https://codeyourfuture.io",
   },
   {
     school: "University of Westminster",
@@ -37,6 +38,7 @@ const educationData = [
       "Teamwork",
       "Agile methodology",
     ],
+    url: "https://www.westminster.ac.uk",
   },
 ];
 

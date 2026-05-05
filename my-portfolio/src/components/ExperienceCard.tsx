@@ -1,6 +1,6 @@
 interface Props {
-  school: string;
-  degree: string;
+  company: string;
+  role: string;
   duration: string;
   description: string;
   isCurrent?: boolean;
@@ -8,9 +8,9 @@ interface Props {
   url?: string;
 }
 
-function EducationCard({
-  school,
-  degree,
+function ExperienceCard({
+  company,
+  role,
   duration,
   description,
   isCurrent,
@@ -26,19 +26,17 @@ function EducationCard({
     >
       <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-start gap-2 mb-4 md:mb-0">
         <h3 className="text-xl font-extrabold text-slate-900 dark:text-white">
-          {school}
+          {company}
         </h3>
 
         {isCurrent && (
           <span className="w-fit bg-blue-700 dark:bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">
-            Currently Enrolled
+            Currently Employed
           </span>
         )}
       </div>
 
-      <p className="text-blue-700 dark:text-blue-300 font-bold mb-2">
-        {degree}
-      </p>
+      <p className="text-blue-700 dark:text-blue-300 font-bold mb-2">{role}</p>
 
       <p className="text-sm text-slate-600 dark:text-slate-300 mb-4 italic">
         {duration}
@@ -64,4 +62,4 @@ function EducationCard({
   );
 }
 
-export default EducationCard;
+export default ExperienceCard;

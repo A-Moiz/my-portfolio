@@ -5,6 +5,7 @@ import Skill from "./sections/Skill";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Education from "./sections/Education";
+import Experience from "./sections/Experience";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Hero />
       <Education />
+      <Experience />
       <Project />
       <Skill />
       <Contact />
