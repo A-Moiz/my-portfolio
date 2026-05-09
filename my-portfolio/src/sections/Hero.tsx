@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFileArrowDown,
+  faArrowUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 import HeroImg from "../assets/hero-img-2.png";
 import Button from "../components/Button";
 
@@ -29,18 +34,21 @@ function Hero() {
             href="https://canva.link/805ndmah46ti3ff"
             label="CV"
             variant="primary"
+            icon={<FontAwesomeIcon icon={faArrowUpRightFromSquare} />}
           />
           <Button
             href="/reference-letter.pdf"
             label="Reference Letter"
             variant="secondary"
             download="reference-letter.pdf"
+            icon={<FontAwesomeIcon icon={faFileArrowDown} />}
           />
           <Button
             href="/award-confirmation.pdf"
             label="Award Confirmation"
             variant="secondary"
             download="award-confirmation.pdf"
+            icon={<FontAwesomeIcon icon={faFileArrowDown} />}
           />
         </div>
       </div>

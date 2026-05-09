@@ -18,6 +18,7 @@ const educationData = [
       "Agile methodology",
     ],
     url: "https://codeyourfuture.io",
+    buttonTxt: "View CYF Website",
   },
   {
     school: "University of Westminster",
@@ -39,6 +40,7 @@ const educationData = [
       "Agile methodology",
     ],
     url: "https://www.westminster.ac.uk",
+    buttonTxt: "View University Website",
   },
 ];
 
@@ -56,7 +58,7 @@ function Education() {
             Academic{" "}
             <span className="text-blue-700 dark:text-blue-400">Journey</span>
           </h2>
-          <p className="text-slate-700 dark:text-slate-200 mt-4 max-w-xl text-lg">
+          <p className="text-slate-600 dark:text-slate-400 mt-4 text-lg">
             My educational background and current academic pursuits in the field
             of technology.
           </p>

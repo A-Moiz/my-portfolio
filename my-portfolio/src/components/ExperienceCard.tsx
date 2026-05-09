@@ -1,3 +1,7 @@
+import Button from "./Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
 interface Props {
   company: string;
   role: string;
@@ -6,6 +10,7 @@ interface Props {
   isCurrent?: boolean;
   tags?: string[];
   url?: string;
+  buttonTxt: string;
 }
 
 function ExperienceCard({
@@ -16,14 +21,10 @@ function ExperienceCard({
   isCurrent,
   tags = [],
   url,
+  buttonTxt,
 }: Props) {
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex flex-col p-8 bg-slate-50 dark:bg-blue-900/20 border border-slate-200 dark:border-blue-800 rounded-3xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-blue-400 dark:hover:border-blue-500 cursor-pointer"
-    >
+    <div className="flex flex-col justify-between p-8 bg-slate-50 dark:bg-blue-900/20 border border-slate-200 dark:border-blue-800 rounded-3xl">
       <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-start gap-2 mb-4 md:mb-0">
         <h3 className="text-xl font-extrabold text-slate-900 dark:text-white">
           {company}
@@ -58,7 +59,16 @@ function ExperienceCard({
           ))}
         </div>
       )}
-    </a>
+
+      <div className="mt-auto pt-8">
+        <Button
+          href={url}
+          label={buttonTxt}
+          variant="secondary"
+          icon={<FontAwesomeIcon icon={faArrowUpRightFromSquare} />}
+        />
+      </div>
+    </div>
   );
 }
 

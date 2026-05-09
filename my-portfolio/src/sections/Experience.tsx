@@ -17,6 +17,7 @@ const experienceData = [
       "Organisation",
     ],
     url: "https://www.horizonteachers.com",
+    buttonTxt: "View Horizon Teachers' Website",
   },
   {
     company: "RevuLink",
@@ -33,6 +34,7 @@ const experienceData = [
       "Problem solving",
     ],
     url: "https://revulink.net/?srsltid=AfmBOoqlGSHj1Gbm5I_JoHHA09IO2wegCZj1PNPxWDgIPfLD2AFgniwD&_su_rec=IL7bU3kShGspsWfTRsa17xRod9G26wxG2AmZ8Uh7vE8LwljV8OSQA-Ql8dhLmsB-_ezkyLqB0GwANLYv__nyQH9UKezjYFMYXWLKy0AueyEUeZCCrnvUy-2DRPjSllTNQHJ4mymOJdk_uZtGY5vrFX1HLyJD_fqtTI7zCF9O0qRljLpKFxai8RLa9wEWyBJg48OO5zQvo3KspQCZ7RCKhvayQKR-OLiHrJCtuqdViE3iF9gHD5Gwtd0o0FeGGZHDdxxiwn9CpFjawQ&_su_rec_id=4d545d37-02f3-4051-af72-31c7becbc541-1778011249",
+    buttonTxt: "View RevuLink's Website",
   },
   {
     company: "JD Sports",
@@ -50,6 +52,7 @@ const experienceData = [
       "Organisation",
     ],
     url: "https://www.jdsports.co.uk",
+    buttonTxt: "View JD's Website",
   },
 ];
 
@@ -67,7 +70,7 @@ function Experience() {
             Professional{" "}
             <span className="text-blue-700 dark:text-blue-400">Journey</span>
           </h2>
-          <p className="text-slate-700 dark:text-slate-200 mt-4 max-w-xl text-lg">
+          <p className="text-slate-600 dark:text-slate-400 mt-4 text-lg">
             A look at the roles and projects that have shaped my skills as a
             developer.
           </p>

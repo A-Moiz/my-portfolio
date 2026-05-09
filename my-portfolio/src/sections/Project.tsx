@@ -24,7 +24,7 @@ function Project() {
       tags: ["HTML/CSS", "JavaScript", "TVMaze API"],
     },
     {
-      title: "List It (iOS)",
+      title: "List It",
       description:
         "A minimalist To-Do list and Note-taking app designed for speed and simplicity.",
       image: ListIt,
@@ -33,48 +33,12 @@ function Project() {
     },
 
     {
-      title: "List It (Web)",
-      description:
-        "A minimalist To-Do list and Note-taking app designed for speed and simplicity.",
-      image: ListItWeb,
-      href: "https://list-it-dom.netlify.app/landingpage",
-      tags: ["Web", "React", "Tailwind css", "Productivity"],
-    },
-
-    {
-      title: "OPBR Companion (iOS)",
+      title: "OPBR Companion",
       description:
         "A comprehensive guide and companion utility for One Piece Bounty Rush players to optimise their gameplay.",
       image: OpbrCompanion,
       href: "https://apps.apple.com/gb/app/opbr-companion/id6737994116",
       tags: ["iOS", "Swift", "SwiftUI", "Game guide"],
-    },
-
-    {
-      title: "OPBR Companion (Web)",
-      description:
-        "A comprehensive guide and companion utility for One Piece Bounty Rush players to optimise their gameplay.",
-      image: OpbrCompanionWeb,
-      href: "https://opbr-companion.netlify.app",
-      tags: ["Web", "TypeScript", "Game guide"],
-    },
-
-    {
-      title: "BMI Buddy",
-      description:
-        "A streamlined health utility providing a quick and easy way for users to calculate and track their BMI.",
-      image: BmiBuddy,
-      href: "https://apps.apple.com/gb/app/bmi-buddy/id6683310423",
-      tags: ["iOS", "Swift", "SwiftUI", "Health & Fitness", "Firebase"],
-    },
-
-    {
-      title: "Vocabio",
-      description:
-        "A community driven slang dictionary where users contribute definitions and vote on the best entries in a live feed.",
-      image: Vocabio,
-      href: "https://apps.apple.com/gb/app/vocabio/id6757109154",
-      tags: ["iOS", "Swift", "SwiftUI", "Firebase", "Social"],
     },
 
     {
@@ -84,15 +48,6 @@ function Project() {
       image: WheelSpin,
       href: "https://github.com/A-Moiz/spin-d-wheel",
       tags: ["Web", "JavaScript", "HTML/CSS", "DOM Manipulation"],
-    },
-
-    {
-      title: "Anime Quote Generator",
-      description:
-        "A simple and interactive web application that displays random anime quotes and allows users to browse and search through all available quotes.",
-      image: AnimeQuote,
-      href: "https://github.com/A-Moiz/anime-quote-generator",
-      tags: ["Web", "HTML/CSS", "JavaScript", "Firebase"],
     },
 
     {
@@ -126,7 +81,7 @@ function Project() {
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
               Selected <span className="text-blue-500">Projects</span>
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-lg text-lg">
+            <p className="text-slate-600 dark:text-slate-400 text-lg">
               A curated selection of work ranging from mobile applications to
               websites.
             </p>

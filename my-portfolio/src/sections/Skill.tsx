@@ -49,7 +49,7 @@ function Skill() {
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
             My <span className="text-blue-500">Skills</span>
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 mt-4 max-w-xl">
+          <p className="text-slate-600 dark:text-slate-400 mt-4">
             I build iOS and web applications using modern technologies, with a
             focus on clean architecture and user experience.
           </p>

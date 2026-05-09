@@ -2,11 +2,11 @@ import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
-  faFolderOpen,
   faBars,
   faXmark,
   faVolumeHigh,
   faVolumeMute,
+  faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import Button from "../components/Button";
 import audio from "../assets/overtaken.mp3";
@@ -25,6 +25,29 @@ function NavBar() {
       }
       setIsPlaying(!isPlaying);
     }
+  };
+
+  const smoothScrollTo = (href: string) => {
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 800;
+    let startTime: number | null = null;
+
+    const ease = (t: number) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
+
+    const animation = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      window.scrollTo(0, startPosition + distance * ease(progress));
+      if (elapsed < duration) requestAnimationFrame(animation);
+    };
+
+    requestAnimationFrame(animation);
   };
 
   const githubProfileLink = "https://github.com/A-Moiz";
@@ -59,6 +82,10 @@ function NavBar() {
             >
               <a
                 href={link.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  smoothScrollTo(link.href);
+                }}
                 className="hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
               >
                 {link.label}
@@ -103,7 +130,7 @@ function NavBar() {
             <Button
               href="https://drive.google.com/drive/folders/13lQdURn4Z63anjTBkN1ts2Ii-Wr2ikPm?usp=share_link"
               label="Documents"
-              icon={<FontAwesomeIcon icon={faFolderOpen} />}
+              icon={<FontAwesomeIcon icon={faArrowUpRightFromSquare} />}
               variant="secondary"
             />
           </div>
@@ -131,7 +158,11 @@ function NavBar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  smoothScrollTo(link.href);
+                  setIsOpen(false);
+                }}
                 className="block py-2 text-lg font-bold text-slate-700 dark:text-slate-200 hover:text-blue-600"
               >
                 {link.label}
@@ -165,7 +196,7 @@ function NavBar() {
             <Button
               href="https://drive.google.com/drive/folders/13lQdURn4Z63anjTBkN1ts2Ii-Wr2ikPm?usp=share_link"
               label="Documents"
-              icon={<FontAwesomeIcon icon={faFolderOpen} />}
+              icon={<FontAwesomeIcon icon={faArrowUpRightFromSquare} />}
               variant="secondary"
             />
           </div>

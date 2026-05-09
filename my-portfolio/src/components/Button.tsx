@@ -1,5 +1,5 @@
 interface Props {
-  href: string;
+  href?: string;
   label: string;
   icon?: React.ReactNode;
   variant?: "primary" | "secondary";
