@@ -11,13 +11,15 @@ function App() {
   return (
     <div className="min-h-screen">
       <NavBar />
-      <Hero />
-      <Education />
-      <Experience />
-      <Project />
-      <Skill />
-      <Contact />
-      <Footer />
+      <div className="lg:pl-64">
+        <Hero />
+        <Education />
+        <Experience />
+        <Project />
+        <Skill />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
