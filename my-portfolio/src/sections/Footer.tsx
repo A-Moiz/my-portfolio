@@ -6,6 +6,7 @@ function Footer() {
   const githubProfileLink = "https://github.com/A-Moiz";
   const linkedinProfileLink =
     "https://www.linkedin.com/in/abdul-moiz-135580307/";
+  const portfolioRepoLink = "https://github.com/A-Moiz/my-portfolio";
 
   return (
     <footer className="py-12 px-8 md:px-16 bg-white dark:bg-blue-950 border-t border-slate-200 dark:border-blue-900 transition-colors duration-300">
@@ -26,6 +27,7 @@ function Footer() {
           <a
             href={githubProfileLink}
             target="_blank"
+            rel="noreferrer"
             aria-label="Visit my GitHub profile"
             className="text-slate-600 dark:text-slate-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors text-xl"
           >
@@ -34,6 +36,7 @@ function Footer() {
           <a
             href={linkedinProfileLink}
             target="_blank"
+            rel="noreferrer"
             aria-label="Visit my LinkedIn profile"
             className="text-[#0077b5] dark:text-[#0a66c2] hover:opacity-80 transition-opacity text-xl"
           >
@@ -41,11 +44,27 @@ function Footer() {
           </a>
         </div>
 
-        {/* Built with */}
-        <p className="text-xs font-medium uppercase tracking-widest text-slate-400 dark:text-slate-500">
-          Built with <span className="text-blue-500">React</span> &{" "}
-          <span className="text-blue-500">Tailwind</span>
-        </p>
+        <a
+          href={portfolioRepoLink}
+          target="_blank"
+          rel="noreferrer"
+          className="group flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200"
+        >
+          <span>
+            Built with{" "}
+            <span className="text-blue-500 group-hover:text-blue-500">
+              React
+            </span>{" "}
+            &{" "}
+            <span className="text-blue-500 group-hover:text-blue-500">
+              Tailwind
+            </span>
+          </span>
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="text-sm text-slate-400 dark:text-slate-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors"
+          />
+        </a>
       </div>
     </footer>
   );

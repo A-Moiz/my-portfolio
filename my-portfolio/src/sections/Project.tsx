@@ -16,6 +16,7 @@ function Project() {
         "A dynamic, responsive web application built to take structured data from an external API and display it to users in a clear, interactive format.",
       image: TVShow,
       href: "https://cyf-a-moiz-tv.netlify.app",
+      githubUrl: "https://github.com/A-Moiz/Project-TV-Show",
       tags: ["HTML/CSS", "JavaScript", "TVMaze API"],
     },
     {
@@ -24,6 +25,7 @@ function Project() {
         "A minimalist To-Do list and Note-taking app designed for speed and simplicity.",
       image: ListIt,
       href: "https://apps.apple.com/gb/app/list-it-simple-to-do-list/id6746731233",
+      githubUrl: "https://github.com/A-Moiz/List-It",
       tags: ["iOS", "Swift", "SwiftUI", "Supabase", "Productivity"],
     },
 
@@ -33,6 +35,7 @@ function Project() {
         "A comprehensive guide and companion utility for One Piece Bounty Rush players to optimise their gameplay.",
       image: OpbrCompanion,
       href: "https://apps.apple.com/gb/app/opbr-companion/id6737994116",
+      githubUrl: "https://github.com/A-Moiz/opbr-companion",
       tags: ["iOS", "Swift", "SwiftUI", "Game guide"],
     },
 
@@ -42,6 +45,7 @@ function Project() {
         "A simple web application that allows users to add items, display them in a sidebar, and generate a random item from the list.",
       image: WheelSpin,
       href: "https://github.com/A-Moiz/spin-d-wheel",
+      githubUrl: "https://github.com/A-Moiz/spin-d-wheel",
       tags: ["Web", "JavaScript", "HTML/CSS", "DOM Manipulation"],
     },
 
@@ -50,7 +54,7 @@ function Project() {
       description:
         "Python program designed to determine student progression outcomes based on the number of credits achieved in Pass, Defer, and Fail categories.",
       image: StudentResults,
-      href: "https://github.com/A-Moiz/student-results",
+      githubUrl: "https://github.com/A-Moiz/student-results",
       tags: ["Python", "File I/O", "Data Visualization", "Exception Handling"],
     },
 
@@ -59,7 +63,7 @@ function Project() {
       description:
         "Java desktop application designed to manage doctors and patient consultations for a skin consultation clinic.",
       image: SkinConsultation,
-      href: "https://github.com/A-Moiz/Skin-Consultation-Manager",
+      githubUrl: "https://github.com/A-Moiz/Skin-Consultation-Manager",
       tags: ["Java", "OOP", "Swing GUI", "University"],
     },
   ];
