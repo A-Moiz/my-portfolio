@@ -44,7 +44,7 @@ function Project() {
       description:
         "A simple web application that allows users to add items, display them in a sidebar, and generate a random item from the list.",
       image: WheelSpin,
-      href: "https://github.com/A-Moiz/spin-d-wheel",
+      href: "https://a-moiz.github.io/spin-d-wheel/",
       githubUrl: "https://github.com/A-Moiz/spin-d-wheel",
       tags: ["Web", "JavaScript", "HTML/CSS", "DOM Manipulation"],
     },
